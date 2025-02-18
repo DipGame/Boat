@@ -1,0 +1,133 @@
+.main_pride_section {
+    background-color: $color-btn-1;
+}
+
+.main_pride_section * {
+    color: $color-white;
+}
+
+.main_pride {
+    max-width: none;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .top_cont {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        align-items: center;
+        width: 100%;
+        max-width: 1322px;
+        padding: 0 16px;
+        margin: 0 auto;
+
+        .swiperPride-pagination {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+
+            .swiper-pagination-bullet {
+                margin: 0;
+                width: 16px;
+                height: 16px;
+                background: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 1;
+            }
+
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                margin: 0;
+                width: 16px;
+                height: 16px;
+                background: none;
+                border: 1px solid $color-white;
+
+            }
+
+            .swiper-pagination-bullet::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                background-color: $color-white;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.swiperPride {
+    width: 100%;
+
+    .swiper-slide {
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+        width: 410px;
+        height: 270px;
+        transition: transform .5s;
+
+        img {
+            object-fit: cover;
+            object-position: center;
+            border-radius: 12px;
+            width: 410px;
+            height: 270px;
+        }
+
+        h3 {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0px;
+        }
+    }
+}
+
+.swiperPride .swiper-slide:hover {
+    transition: transform .5s;
+    transform: scale(0.95);
+}
+
+@media (max-width: 500px) {
+    .main_pride {
+        padding: 50px 0;
+
+        .top_cont {
+            flex-direction: column;
+
+            h2 {
+                text-align: center;
+            }
+        }
+
+    }
+
+    .swiperPride .swiper-slide {
+
+        width: 320px;
+        height: 211px;
+
+        img {
+            width: 320px;
+            height: 211px;
+        }
+
+    }
+}
+
+@media (max-width: 350px) {
+    .swiperPride .swiper-slide {
+
+        width: 90vw;
+
+        img {
+            width: 90vw;
+        }
+
+    }
+}

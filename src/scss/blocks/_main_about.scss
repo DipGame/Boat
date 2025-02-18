@@ -1,0 +1,106 @@
+.main_about_section {
+    background-color: $color-grey;
+}
+
+.main_about_section * {
+    color: $color-white;
+}
+
+.main_about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 60px 0 50px;
+
+    h2 {
+        font-family: Unbounded;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46.8px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 0 auto 20px;
+    }
+
+    p {
+        margin: 0 auto 40px;
+        max-width: 872px;
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+
+    .flex_cont {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 10px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+
+            .img {
+                width: 80px;
+                height: 80px;
+                margin: 0 auto 15px;
+            }
+
+            h3 {
+                font-family: Unbounded;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 17.36px;
+                letter-spacing: 0px;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 0 auto 30px;
+            }
+
+            p {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                letter-spacing: 0px;
+                text-align: center;
+                color: $color-grey-2;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .main_about .flex_cont {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .main_about {
+        padding: 30px 0 50px;
+
+        h2 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 31.2px;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+
+        p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+}

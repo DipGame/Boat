@@ -1,0 +1,36 @@
+.element_detail {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .link_cont {
+        background-color: $color-white;
+        width: fit-content;
+        padding: 5px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        a {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.84px;
+            letter-spacing: 0%;
+            padding: 15px 20px;
+            border-radius: 12px;
+
+        }
+
+        a.active {
+            background-color: $color-btn-1;
+            color: $color-white !important; 
+        }
+
+        a:hover {
+            background-color: $color-btn-1;
+            color: $color-white !important;
+        }
+    }
+}

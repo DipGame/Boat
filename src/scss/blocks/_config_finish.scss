@@ -1,0 +1,304 @@
+.config_finish_section {
+    padding: 0 16px;
+}
+
+.config_finish {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+
+    .finish_cont {
+        width: 100%;
+        max-width: 820px;
+        background-color: $color-white;
+        border-radius: 16px;
+        padding: 30px;
+
+        h2 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22.32px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 36px;
+            line-height: 44.64px;
+            letter-spacing: 0px;
+            white-space: nowrap;
+            margin-bottom: 35px;
+        }
+
+        h3 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22.32px;
+            letter-spacing: 0px;
+            margin-bottom: 15px;
+        }
+
+        .options_list {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+                padding: 15px 0;
+                border-bottom: 1px solid #E4E4E7;
+                align-items: center;
+
+                h4 {
+                    font-family: Inter;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19.36px;
+                    letter-spacing: 0px;
+                    width: 50%;
+                }
+
+                p {
+                    font-family: Inter;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                    white-space: nowrap;
+                }
+
+                svg {
+                    cursor: $cursor-hover-white;
+                }
+            }
+
+            li:last-of-type {
+                border: none;
+            }
+        }
+    }
+
+    .config_form {
+        background-color: $color-btn-1;
+        border-radius: 12px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: fit-content;
+        width: 100%;
+        max-width: 440px;
+
+        * {
+            color: $color-white;
+        }
+
+        h3 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22.32px;
+            letter-spacing: 0%;
+            text-transform: uppercase;
+        }
+
+        .input_cont {
+            position: relative;
+
+            input {
+                width: 100%;
+                background-color: $color-white;
+                height: 50px;
+                border-radius: 8px;
+                padding: 0 24px;
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0px;
+                color: $color-black;
+                border: 1px solid $color-white;
+                transition: .5s;
+            }
+
+            input::placeholder {
+                color: $color-black;
+            }
+
+            span {
+                position: absolute;
+                display: none;
+                font-size: 10px;
+                line-height: 14px;
+                top: 100%;
+                left: 24px;
+                white-space: nowrap;
+            }
+        }
+
+        .input_cont.err {
+
+            input {
+                border: 1px solid $color-red;
+            }
+
+            span {
+                display: block;
+            }
+        }
+
+        button[type=submit] {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            svg {
+                position: relative;
+                transition: .5s;
+            }
+        }
+
+        button[type=submit]:hover {
+            svg {
+                transform: translateX(15px);
+            }
+        }
+
+        .bot_text {
+            opacity: .5;
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0px;
+            color: $color-white;
+        }
+
+        .bot_text a {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0px;
+        }
+
+        .bot_text a:hover {
+            text-decoration: underline;
+            color: $color-white !important;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+    .config_finish_section {
+        padding: 0;
+        // padding-bottom: 50px;
+        background-color: $color-white;
+    }
+
+    .config_finish {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .config_finish .finish_cont .options_list li:last-of-type {
+        border-bottom: 1px solid #E4E4E7;
+    }
+
+    .config_finish {
+
+        .help_cont {
+            padding: 0 16px;
+        }
+
+        .config_form {
+            max-width: none;
+        }
+    }
+
+    .config_finish .finish_cont {
+        padding: 30px 16px;
+        max-width: none;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .config_finish .finish_cont h2 {
+        font-family: Unbounded;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.84px;
+        letter-spacing: 0%;
+    }
+
+    .config_finish .finish_cont .price {
+        font-family: Unbounded;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37.2px;
+        letter-spacing: 0px;
+    }
+
+    .config_finish .finish_cont h3 {
+        font-family: Unbounded;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.84px;
+        letter-spacing: 0px;
+    }
+
+    .config_finish .finish_cont .options_list li h4 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.94px;
+        letter-spacing: 0px;
+        width: 60%;
+    }
+
+    .config_finish .finish_cont .options_list li p {
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 0px;
+    }
+
+    .config_finish .finish_cont .options_list li {
+        padding: 8px 0;
+    }
+
+    .config_finish .config_form h3 {
+        font-family: Unbounded;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.84px;
+        letter-spacing: 0%;
+    }
+
+    .config_finish .config_form .bot_text {
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0px;
+
+        a {
+            font-family: Inter;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0px;
+        }
+    }
+}

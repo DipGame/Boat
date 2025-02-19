@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
         }
     });
-    
+
     let swiperPride = new Swiper(".swiperPride", {
         autoplay: {
             delay: 5000,
@@ -30,6 +30,38 @@ document.addEventListener("DOMContentLoaded", function () {
             el: ".swiperPride-pagination",
             clickable: true, // Включение кликабельности пагинации
         },
+    });
+
+    let swiperSimilar = new Swiper(".swiperSimilar", {
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 15,
+        navigation: {
+            nextEl: ".swiperSimilar-button-next",
+            prevEl: ".swiperSimilar-button-prev",
+        },
+        pagination: {
+            el: ".swiperSimilar-pagination",
+            clickable: true, // Включение кликабельности пагинации
+        },
+        breakpoints: {
+            720: {
+                slidesPerView: 2,
+                spaceBetween: 15
+            },
+            960: {
+                slidesPerView: 3,
+                spaceBetween: 15
+            },
+            1280: {
+                slidesPerView: 4,
+                spaceBetween: 15
+            },
+        }
     });
 
     let swiperElementPrew = new Swiper(".swiperElementPrew", {

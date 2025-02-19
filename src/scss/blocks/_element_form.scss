@@ -1,0 +1,206 @@
+.element_form {
+    background-color: $color-btn-1;
+    border-radius: 24px;
+    background-image: url('./../img/img_form.png');
+    background-position: 100% 100%;
+    background-size: auto 100%;
+
+    form {
+        padding: 60px 50px;
+        width: 100%;
+        max-width: 670px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        * {
+            color: $color-white;
+        }
+
+        h2 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 48px;
+            letter-spacing: 0px;
+        }
+
+        .cont {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            .input_cont {
+                position: relative;
+
+                input {
+                    width: 100%;
+                    // background-color: $color-white;
+                    height: 60px;
+                    border-radius: 8px;
+                    padding: 0 24px;
+                    font-family: Inter;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26px;
+                    letter-spacing: 0px;
+                    // color: $color-black;
+                    border: 1px solid $color-white;
+                    transition: .5s;
+                }
+
+                input::placeholder {
+                    color: $color-white;
+                }
+
+                span {
+                    position: absolute;
+                    display: none;
+                    font-family: Inter;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: 0px;
+                    white-space: nowrap;
+                    transform: translateY(5px);
+                }
+            }
+
+            .input_cont.err {
+                margin-bottom: 30px;
+
+                input {
+                    border: 1px solid $color-red;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+
+            button[type=submit] {
+                color: $color-black;
+                border-radius: 8px;
+                height: 60px;
+            }
+            button:disabled:hover {
+                background-color: $color-white;
+                border: 1px solid $color-white;
+                transition: 0.5s;
+                color: $color-black !important;
+            }
+           
+
+        }
+
+        .bot_text {
+            display: flex;
+            gap: 9px;
+            align-items: center;
+
+
+            span {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0px;
+            }
+
+            a {
+                font-family: Inter;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: 0px;
+
+            }
+
+            a:hover {
+                color: $color-white !important;
+                text-decoration: underline;
+            }
+
+            .checkBox {
+                min-width: 17px;
+                min-height: 17px;
+                max-width: 17px;
+                max-height: 17px;
+                // background-color: $color-white;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: $cursor-hover-white;
+                border: 1px solid $color-white;
+
+                svg {
+                    display: none;
+                }
+            }
+
+            .checkBox.checked {
+                background-color: $color-white;
+                border: 1px solid #00000000;
+
+                svg {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .element_form {
+        background: none;
+        background-color: $color-btn-1;
+
+        form {
+            max-width: none;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .element_form_section {
+        margin-bottom: 0;
+        padding: 0;
+
+    }
+
+    .element_form {
+        border-radius: 0;
+
+        h2 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 38.4px;
+            letter-spacing: 0px;
+        }
+
+        form {
+            padding: 30px;
+        }
+    }
+
+    .element_form form .bot_text {
+        span {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: 0px;
+        }
+
+
+        a {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: 0px;
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.element_video {
+    display: flex;
+    background-color: $color-white;
+    border-radius: 24px;
+    margin-bottom: 110px;
+    overflow: hidden;
+
+
+    .title_cont {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        min-height: 480px;
+        gap: 20px;
+        flex-direction: column;
+        padding: 60px 40px 60px 50px;
+        max-width: 580px;
+
+        h2 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 39px;
+            letter-spacing: 0%;
+        }
+
+        p {
+            font-family: Inter;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22.4px;
+            letter-spacing: 0px;
+        }
+    }
+
+    .video {
+        background-color: $color-btn-1;
+        width: 100%;
+        position: relative;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: .5s;
+            z-index: 2;
+        }
+    }
+
+    .video::before {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: .5s;
+        content: "";
+        background-color: $color-black;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+    }
+
+    .video:hover::before {
+        transition: .5s;
+        opacity: 0.5;
+        visibility: visible;
+    }
+
+    .video:hover {
+        svg {
+            transform: translateX(-50%) translateY(-50%) scale(0.9);
+            transition: .5s;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .element_video {
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
+
+    .element_video .title_cont {
+        padding: 30px;
+        max-width: none;
+        gap: 20px;
+        min-height: auto;
+    }
+
+    .element_video .video {
+        aspect-ratio: 343/232;
+    }
+}
+
+@media (max-width: 500px) {
+    .element_video .title_cont h2 {
+        font-family: Unbounded;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31.2px;
+        letter-spacing: 0%;
+    }
+
+    .element_video .title_cont p {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19.6px;
+        letter-spacing: 0px;
+    }
+}

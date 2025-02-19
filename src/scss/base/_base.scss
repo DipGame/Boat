@@ -89,7 +89,7 @@ h1.title {
 
 @media (max-width: 500px) {
 	h1.title {
-		margin: 50px  auto 30px;
+		margin: 50px auto 30px;
 	}
 
 	.def_title {
@@ -171,6 +171,12 @@ main {
 	padding: 0;
 	margin: 0;
 	position: relative;
+}
+
+@media (max-width: 1280px) {
+	main {
+		padding-top: 70px;
+	}
 }
 
 .padding {

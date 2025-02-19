@@ -15,6 +15,7 @@ header {
     align-items: center;
     gap: 20px;
     padding: 20px 0;
+    position: relative;
 
     .btn-menu {
         display: none;
@@ -213,6 +214,8 @@ header {
 
 @media (max-width: 1280px) {
 
+
+
     .header_hidden_cont_menu .logo_link,
     .header_search_svg_btn {
         display: none;
@@ -354,6 +357,7 @@ header {
 
     header.open {
 
+
         .header_overlay {
             opacity: 0.3;
             visibility: visible;
@@ -449,6 +453,12 @@ header {
     }
 
 
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 }
 
 
@@ -478,7 +488,7 @@ header {
             background-color: $color-white;
             padding: 8px 20px 16px;
             border-radius: 6px;
-           
+
             -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
             -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
             box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);

@@ -1,0 +1,148 @@
+.video_galery {
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h2 {
+        font-family: Unbounded;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29.76px;
+        letter-spacing: 0px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            height: auto;
+
+            .prew {
+                border-radius: 16px;
+                overflow: hidden;
+                aspect-ratio: 630/338;
+                position: relative;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .blur {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    width: 70px;
+                    height: 70px;
+                    backdrop-filter: blur(5px);
+                    background-color: #FFFFFF33;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: .5s;
+                }
+            }
+
+            .prew::before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: $color-black;
+                opacity: 0;
+                content: "";
+                transition: .5s;
+            }
+
+            .prew:hover::before {
+                opacity: 0.5;
+            }
+
+            .prew:hover .blur {
+                transform: translateX(-50%) translateY(-50%) scale(0.9);
+            }
+
+            h3 {
+                font-family: Inter;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23.4px;
+                letter-spacing: 0%;
+                margin-top: auto;
+                transition: .5s;
+            }
+
+
+        }
+
+        .card:hover {
+
+            h3 {
+                color: $color-btn-1;
+            }
+
+            .prew::before {
+                opacity: 0.5;
+            }
+
+            .prew .blur {
+                transform: translateX(-50%) translateY(-50%) scale(0.9);
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .video_galery {
+        margin-bottom: 50px;
+        gap: 20px;
+
+        h2 {
+            font-family: Unbounded;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.84px;
+            letter-spacing: 0px;
+        }
+
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+
+            .card {
+                gap: 15px;
+
+                .prew {
+                    aspect-ratio: 343/184;
+
+
+                }
+
+
+
+                h3 {
+                    font-family: Inter;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18.2px;
+                    letter-spacing: 0%;
+
+                }
+
+
+            }
+
+        }
+    }
+}

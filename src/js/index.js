@@ -93,6 +93,16 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    if (document.querySelector('.sort_btn')) {
+        document.addEventListener('click', (event) => {
+            if (event.target.classList.contains('sort_btn') || event.target.closest('.sort_btn')) {
+                toggleClass(document.querySelector('.sort_btn'), "open");
+            } else if (!event.target.closest('.sort_btn')) {
+                removeClass(document.querySelector('.sort_btn'), "open");
+            }
+        });
+    }
+
     if (document.querySelector('[data-href]')) {
         const hrefElems = document.querySelectorAll('[data-href]');
         hrefElems.forEach(el => {
@@ -626,6 +636,154 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         });
+    }
+
+    if (document.querySelector('.model_menu_and_filter .input_lines .line_inp')) {
+
+        const model_menu_and_filter = document.querySelector('.model_menu_and_filter');
+
+        if (model_menu_and_filter.querySelector('.mob_close_filt')) {
+            model_menu_and_filter.querySelector('.mob_close_filt').addEventListener('click', () => {
+                removeClass(model_menu_and_filter, "open");
+            })
+        }
+
+        if (document.querySelector('.filter_btn')) {
+            document.querySelector('.filter_btn').addEventListener('click', () => {
+                addClass(model_menu_and_filter, "open");
+            })
+        }
+        if (document.getElementById('filter_sub')) {
+            document.getElementById('filter_sub').addEventListener('click', () => {
+                removeClass(model_menu_and_filter, "open");
+            })
+        }
+
+        if (model_menu_and_filter.querySelector('.filter-group')) {
+            const filterGroups = model_menu_and_filter.querySelectorAll('.filter-group');
+
+            filterGroups.forEach(group => {
+                let selected = group.querySelector('.selected');
+                let options = group.querySelectorAll('.sel_list');
+
+                selected.addEventListener('click', () => {
+                    toggleClass(group, "open");
+                })
+
+                document.addEventListener('click', (event) => {
+                    if (!event.target.closest('.filter-group')) {
+                        removeClass(group, "open");
+                    }
+                });
+
+                options.forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        selected.textContent = btn.textContent.trim();
+                        removeClass(group, "open");
+                    })
+                });
+            });
+        }
+
+        if (model_menu_and_filter.querySelector('.color_cont')) {
+            const colorsCont = model_menu_and_filter.querySelector('.colors');
+            const colors = colorsCont.querySelectorAll('div');
+
+            colors.forEach(element => {
+                element.addEventListener('click', () => {
+                    colors.forEach(el => {
+                        removeClass(el, "active");
+                    })
+                    addClass(element, "active");
+                })
+            });
+        }
+
+        // Функция для форматирования значений с префиксом
+        function formatValue(value, prefix) {
+            return `${prefix} ${value}`;
+        }
+
+        // Функция для очистки значения от префиксов
+        function clearPrefix(value) {
+            return value.replace(/[^0-9.]/g, ''); // Убираем всё, кроме цифр и точки
+        }
+
+        // Функция для ограничения значения в заданном диапазоне
+        function clamp(value, min, max) {
+            return Math.max(min, Math.min(max, value));
+        }
+
+        // Функция для создания слайдера
+        function createSlider(sliderId, minInputId, maxInputId) {
+            const slider = document.getElementById(sliderId);
+            const minInput = document.getElementById(minInputId);
+            const maxInput = document.getElementById(maxInputId);
+
+            // Получаем минимальное и максимальное значения из атрибутов data-min и data-max
+            const minRange = parseFloat(minInput.getAttribute('data-min'));
+            const maxRange = parseFloat(maxInput.getAttribute('data-max'));
+
+            // Создаем слайдер с использованием noUiSlider
+            noUiSlider.create(slider, {
+                start: [minRange, maxRange],
+                connect: true,
+                range: {
+                    'min': minRange,
+                    'max': maxRange
+                }
+            });
+
+            // Обновление значений инпутов при изменении слайдера
+            slider.noUiSlider.on('update', (values) => {
+                minInput.value = formatValue(Math.round(values[0]), 'от');
+                maxInput.value = formatValue(Math.round(values[1]), 'до');
+            });
+
+            // Обработка фокуса, потери фокуса и клавиш для инпутов
+            [minInput, maxInput].forEach(input => {
+                input.addEventListener('focus', function () {
+                    this.value = clearPrefix(this.value); // Очищаем значение от префикса
+                    this.select(); // Выделяем весь текст в инпуте
+                });
+
+                input.addEventListener('blur', function () {
+                    const value = clearPrefix(this.value); // Очищаем значение от префикса
+                    if (value !== '') {
+                        const numericValue = parseFloat(value);
+                        const isMin = this === minInput;
+                        const clampedValue = clamp(numericValue, minRange, maxRange); // Ограничиваем значение
+
+                        // Обновляем слайдер и форматируем значение
+                        slider.noUiSlider.set(isMin ? [clampedValue, null] : [null, clampedValue]);
+                        this.value = formatValue(clampedValue, isMin ? 'от' : 'до');
+                    } else {
+                        const currentValue = slider.noUiSlider.get()[this === minInput ? 0 : 1];
+                        this.value = formatValue(currentValue, this === minInput ? 'от' : 'до');
+                    }
+                });
+
+                input.addEventListener('keydown', function (event) {
+                    if (event.key === 'Enter') {
+                        this.blur(); // Убираем фокус при нажатии Enter
+                    }
+                });
+            });
+        }
+
+        // Создание слайдеров для всех параметров
+        createSlider('weight-slider', 'weight-min', 'weight-max'); // Грузоподъемность
+        createSlider('length-slider', 'length-min', 'length-max'); // Длина
+        createSlider('width-slider', 'width-min', 'width-max'); // Ширина
+    }
+
+    if (document.querySelector('.just_text')) {
+        const just_text = document.querySelector('.just_text');
+        let more_text_btn = just_text.querySelector('.more_text_btn');
+        
+        more_text_btn.addEventListener('click', () => {
+            addClass(just_text, "open");
+        })
     }
 
     console.log('index.js finish work');

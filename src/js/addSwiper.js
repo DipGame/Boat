@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
             clickable: true, // Включение кликабельности пагинации
         },
     });
+    let swiperFilters = new Swiper(".swiperFilters", {
+        loop: false,
+        slidesPerView: 'auto',
+        spaceBetween: 8,
+    });
 
     let swiperSimilar = new Swiper(".swiperSimilar", {
         // autoplay: {

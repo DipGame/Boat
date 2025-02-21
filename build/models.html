@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Стартовый шаблон</title>
+	<link rel="stylesheet" href="./fonts/Inter.css" />
+	<link rel="stylesheet" href="./fonts/Unbounded.css" />
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
+	<link rel="stylesheet" href="./css/nouislider.min.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/nouislider.min.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+
+	<div class="overlay">
+
+</div>
+
+<div class="popupCheck">
+    <div class="popup__container">
+        <svg class="close-btn" width="60" height="60" viewBox="0 0 60 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" fill="none" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M27.5843 30L10 12.4157L12.4157 10L30 27.5843L47.5844 10L50 12.4157L32.4157 30L49.9436 47.5263L47.5263 49.9436L30 32.4157L12.4157 50L10 47.5844L27.5843 30Z"
+                fill="#121212" />
+        </svg>
+        <h2>
+            
+        </h2>
+    </div>
+</div>
+	<header class="padding flex">
+    <div class="header_overlay">
+
+    </div>
+    <div class="header_cont">
+        <svg class="btn-menu btn-open-menu" width="40" height="40" viewBox="0 0 40 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="white" fill-opacity="0.15" />
+            <path d="M11 20H23M11 14H29M11 26H29" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <svg class="btn-menu btn-close-menu" width="40" height="40" viewBox="0 0 40 40" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="white" fill-opacity="0.15" />
+            <path d="M28 12L12 28M12 12L28 28" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+
+        <a class="logo_link" href="/">
+            <img class="logo" src="./img/logo.svg" alt="logo">
+        </a>
+
+        <a class="svg_phone">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="40" height="40" rx="8" fill="white" fill-opacity="0.15" />
+                <path
+                    d="M13.1176 11H15.9989C16.8167 11 17.5521 11.4979 17.8558 12.2572L18.9198 14.9171C19.2372 15.7107 18.9318 16.6174 18.1988 17.0572C17.4216 17.5235 17.1209 18.5174 17.6296 19.2675C18.4579 20.489 19.511 21.5421 20.7325 22.3704C21.4826 22.8791 22.4765 22.5784 22.9428 21.8012C23.3826 21.0682 24.2893 20.7628 25.0829 21.0802L27.7428 22.1442C28.5021 22.4479 29 23.1833 29 24.0011V26.8824C29 27.444 28.7769 27.9826 28.3798 28.3798C27.9826 28.7769 27.444 29 26.8824 29C22.7522 28.749 18.8566 26.9951 15.9308 24.0692C13.0049 21.1434 11.251 17.2478 11 13.1176C11 12.556 11.2231 12.0174 11.6202 11.6202C12.0174 11.2231 12.556 11 13.1176 11Z"
+                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+
+        <div class="header_hidden_cont_menu">
+
+            <a class="logo_link" href="/">
+                <img class="logo" src="./img/logo.svg" alt="logo">
+            </a>
+
+            <ul class="menu">
+                <li class="drop active">
+                    <div class="cont">
+                        <a class="link_drop first_link " href="#">
+                            Модели
+                        </a>
+                        <svg class="arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.20435 1.75L5.70435 6.25L10.2043 1.75" stroke="white" stroke-width="1.5"
+                                stroke-linecap="square" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <ul class="drop_menu">
+                        <li class="active">
+                            <a class="" href="#">
+                                Модель 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Модель 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Модель 3
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="first_link" href="#">
+                        Конфигуратор
+                    </a>
+                </li>
+
+                <li class="drop ">
+                    <div class="cont">
+                        <a class="link_drop first_link" href="#">
+                            О нас
+                        </a>
+                        <svg class="arrow" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.20435 1.75L5.70435 6.25L10.2043 1.75" stroke="white" stroke-width="1.5"
+                                stroke-linecap="square" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <ul class="drop_menu">
+
+                        <li>
+                            <a href="#">
+                                О нас 1
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О нас 2
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О нас 3
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                О нас 4
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a class="first_link" href="#">
+                        Галерея
+                    </a>
+                </li>
+
+                <li>
+                    <a class="first_link" href="#">
+                        Контакты
+                    </a>
+                </li>
+            </ul>
+
+            <svg class="header_search_svg_btn" width="21" height="20" viewBox="0 0 21 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.4187 7.91419C2.4187 4.66958 5.04897 2.03931 8.29358 2.03931C11.5382 2.03931 14.1685 4.66958 14.1685 7.91419C14.1685 11.1588 11.5382 13.7891 8.29358 13.7891C5.04897 13.7891 2.4187 11.1588 2.4187 7.91419ZM8.29358 0.0393066C3.9444 0.0393066 0.418701 3.56501 0.418701 7.91419C0.418701 12.2634 3.9444 15.7891 8.29358 15.7891C10.1076 15.7891 11.7783 15.1757 13.1097 14.1451L18.3895 19.4249C18.78 19.8154 19.4132 19.8154 19.8037 19.4249C20.1942 19.0343 20.1942 18.4012 19.8037 18.0106L14.524 12.7309C15.5549 11.3994 16.1685 9.72846 16.1685 7.91419C16.1685 3.56501 12.6428 0.0393066 8.29358 0.0393066Z"
+                    fill="white" />
+            </svg>
+
+            <div class="search" id="title-search">
+                <form class="search_form">
+                    <input id="title-search-input" type="text" name="q" value="" size="40" maxlength="50"
+                        autocomplete="off" placeholder="Поиск товаров">
+                    <div class="cont_32">
+                        <button type="submit">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.00342 8.00022C2.00342 4.68713 4.6892 2.00134 8.00228 2.00134C11.3154 2.00134 14.0011 4.68713 14.0011 8.00022C14.0011 11.3133 11.3154 13.9991 8.00228 13.9991C4.6892 13.9991 2.00342 11.3133 2.00342 8.00022ZM8.00228 0.00134277C3.58463 0.00134277 0.00341797 3.58256 0.00341797 8.00022C0.00341797 12.4179 3.58463 15.9991 8.00228 15.9991C9.85055 15.9991 11.5524 15.3722 12.9068 14.3195L18.293 19.7057C18.6835 20.0962 19.3167 20.0962 19.7072 19.7057C20.0977 19.3151 20.0977 18.682 19.7072 18.2915L14.3211 12.9053C15.3741 11.5508 16.0011 9.84874 16.0011 8.00022C16.0011 3.58256 12.4199 0.00134277 8.00228 0.00134277Z"
+                                    fill="#0E7490" />
+                            </svg>
+                        </button>
+                        <svg width="14px" height="14px" class="close_svg" id="close-btn-search" viewBox="0 0 24 24"
+                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Menu / Close_LG">
+                                    <path id="Vector" d="M21 21 12 12M12 12 3 3M12 12 21.0001 3M12 12 3 21.0001"
+                                        stroke="#A1A1AA" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                </form>
+
+                <div class="search_rez">
+                    <ul>
+                        <li> <a href="">test testedysagdfjsa ghfdhsgfjgsdjfgsh fgfdhsf</a></li>
+                        <li> <a href="">test</a></li>
+                        <li> <a href="">test testedysagdfjsa ghfdhsgfjgsdjfgsh fgfdhsf</a></li>
+                        <li> <a href="">test</a></li>
+                        <li> <a href="">test testedysagdfjsa ghfdhsgfjgsdjfgsh fgfdhsf</a></li>
+                        <li> <a href="">test</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header_contacts">
+                <a class="phone" href="tel:+7 (346) 227 - 13-96">
+                    +7 (346) 227 - 13-96
+                </a>
+                <div class="svg_links_cont">
+                    <a class="svg_link watsapp" href="#">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M13.6469 2.35627C12.3155 1.00984 10.5467 0.183766 8.65964 0.0271921C6.77261 -0.129381 4.89178 0.393864 3.35673 1.50246C1.82167 2.61105 0.733545 4.23195 0.288806 6.07249C-0.155934 7.91303 0.0720213 9.85193 0.931515 11.5391L0.0894366 15.6274C0.0804202 15.6683 0.0800708 15.7105 0.0884111 15.7515C0.0967515 15.7925 0.113596 15.8312 0.137856 15.8653C0.172599 15.9169 0.222261 15.9566 0.280198 15.9792C0.338135 16.0017 0.401584 16.0061 0.462056 15.9916L4.46193 15.0422C6.1445 15.8791 8.06948 16.0919 9.89423 15.6426C11.719 15.1933 13.3251 14.111 14.4267 12.5885C15.5283 11.066 16.0539 9.20197 15.9099 7.32824C15.766 5.45452 14.9618 3.69266 13.6406 2.35627H13.6469ZM12.3964 12.3286C11.4756 13.2477 10.29 13.8551 9.00607 14.0655C7.72218 14.2758 6.40466 14.0785 5.23874 13.5012L4.67876 13.2233L2.222 13.8043V13.7727L2.73988 11.2949L2.4662 10.756C1.87006 9.58692 1.65957 8.25905 1.86494 6.96292C2.0703 5.66679 2.68098 4.46902 3.60932 3.5415C4.77498 2.37705 6.35523 1.72297 8.00286 1.72297C9.6505 1.72297 11.2307 2.37705 12.3964 3.5415L12.4238 3.57939C13.5743 4.74754 14.2165 6.32302 14.2106 7.96259C14.2047 9.60217 13.5511 11.173 12.3922 12.3328L12.3964 12.3286Z"
+                                fill="white" />
+                            <path
+                                d="M12.1838 10.5266C11.8828 11.0002 11.4049 11.5792 10.8091 11.7244C9.7565 11.977 8.15445 11.7244 6.1482 9.86973L6.12294 9.84658C4.37773 8.21716 3.91459 6.85931 4.01774 5.78355C4.07879 5.17094 4.58825 4.61938 5.01771 4.25728C5.08599 4.19971 5.16679 4.15891 5.25366 4.13814C5.34052 4.11737 5.43104 4.1172 5.51798 4.13766C5.60492 4.15811 5.68587 4.19862 5.75436 4.25595C5.82285 4.31327 5.87698 4.38583 5.91242 4.4678L6.55871 5.92881C6.60091 6.02286 6.61673 6.12661 6.60449 6.22895C6.59226 6.3313 6.55242 6.42839 6.48924 6.50984L6.16083 6.93088C6.09257 7.01828 6.05191 7.12404 6.04403 7.23466C6.03616 7.34527 6.06143 7.45573 6.11662 7.55192C6.42858 8.0117 6.80183 8.42675 7.22606 8.78556C7.68249 9.22482 8.20013 9.59567 8.76285 9.88658C8.86556 9.92797 8.97826 9.93786 9.0866 9.91499C9.19495 9.89212 9.29404 9.83753 9.37125 9.75816L9.74808 9.37501C9.81979 9.29791 9.91143 9.24215 10.0129 9.21391C10.1143 9.18567 10.2216 9.18605 10.3228 9.21502L11.8596 9.655C11.9467 9.67978 12.0267 9.72471 12.0932 9.78616C12.1597 9.84761 12.2108 9.92384 12.2424 10.0087C12.2739 10.0936 12.2851 10.1847 12.2749 10.2746C12.2647 10.3646 12.2335 10.4509 12.1838 10.5266Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a class="svg_link telegram" href="#">
+                        <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.84784 11.6511L7.517 16.3046C7.99034 16.3046 8.19534 16.1013 8.44118 15.8571L10.6604 13.7362L15.2588 17.1038C16.1022 17.5738 16.6964 17.3263 16.9239 16.3279L19.9423 2.18426L19.9431 2.18342C20.2106 0.936726 19.4923 0.449215 18.6706 0.755055L0.928504 7.54772C-0.282359 8.01773 -0.264025 8.69275 0.722666 8.99859L5.25861 10.4095L15.7947 3.8168C16.2905 3.48845 16.7414 3.67013 16.3705 3.99847L7.84784 11.6511Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+                <a class="email" href="mailto:apparelboats@mail.ru">
+                    apparelboats@mail.ru
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+	<main>
+        <div class="bread v2 absolute">
+    <ul class="def_div">
+
+        <li>
+            <a href="/">
+                Главная
+            </a>
+        </li>
+
+        <li>
+            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.58398 3.5L7.58398 6.5L4.58398 9.5" stroke="#605F5F" stroke-width="0.75"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </li>
+
+        <li>
+            <a href="/catalog/">
+                Модели
+            </a>
+        </li>
+
+        <li>
+            <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.58398 3.5L7.58398 6.5L4.58398 9.5" stroke="#605F5F" stroke-width="0.75"
+                    stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </li>
+
+        <li>
+            Каютные катера
+        </li>
+    </ul>
+</div>
+        <section class='padding flex model_baner_section' style="background-image: url(./img/model_b.png);">
+    <div class='def_div model_baner'>
+        <div class="cont">
+            <h1>
+                Каютные катера
+            </h1>
+            <div class="default">
+                <p>
+                    Это уже не столько катер для путешествий, сколько плавсредство для доставки грузов и техники в
+                    места, куда обычным способом не добраться.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+        <section class='padding flex model_filter_section'>
+    <div class='def_div model_filter'>
+        <div class="model_filter_length">
+            <h3>
+                Катера по длине
+            </h3>
+
+            <div class="swiper swiperFilters">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide active">
+                        7,5 метров
+                    </div>
+                    <div class="swiper-slide">
+                        10 метров
+                    </div>
+                    <div class="swiper-slide">
+                        11 метров
+                    </div>
+                    <div class="swiper-slide">
+                        12 метров
+                    </div>
+                    <div class="swiper-slide">
+                        14 метров
+                    </div>
+                    <div class="swiper-slide">
+                        17 метров
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="model_top_btns_cont">
+            <div class="filter_btn active">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M11.6255 7.74988C11.6255 6.57627 12.5769 5.62488 13.7505 5.62488C14.9241 5.62488 15.8755 6.57627 15.8755 7.74988C15.8755 8.92348 14.9241 9.87488 13.7505 9.87488C12.5769 9.87488 11.6255 8.92348 11.6255 7.74988ZM10.4332 8.37492H3C2.65482 8.37492 2.375 8.09509 2.375 7.74992C2.375 7.40474 2.65482 7.12492 3 7.12492H10.4332C10.7263 5.55954 12.1001 4.37488 13.7505 4.37488C15.4009 4.37488 16.7746 5.55954 17.0677 7.12492H21.0006C21.3458 7.12492 21.6256 7.40474 21.6256 7.74992C21.6256 8.09509 21.3458 8.37492 21.0006 8.37492H17.0677C16.7746 9.94025 15.4009 11.1249 13.7505 11.1249C12.1001 11.1249 10.7264 9.94025 10.4332 8.37492ZM5.62532 15.75C5.62532 14.5763 6.57672 13.625 7.75032 13.625C8.92393 13.625 9.87532 14.5763 9.87532 15.75C9.87532 16.9236 8.92393 17.875 7.75032 17.875C6.57672 17.875 5.62532 16.9236 5.62532 15.75ZM7.75032 12.375C6.09997 12.375 4.72628 13.5595 4.43311 15.1248H3C2.65482 15.1248 2.375 15.4046 2.375 15.7498C2.375 16.095 2.65482 16.3748 3 16.3748H4.43305C4.72609 17.9402 6.09985 19.125 7.75032 19.125C9.4008 19.125 10.7746 17.9402 11.0676 16.3748H21.0005C21.3457 16.3748 21.6255 16.095 21.6255 15.7498C21.6255 15.4046 21.3457 15.1248 21.0005 15.1248H11.0675C10.7744 13.5595 9.40068 12.375 7.75032 12.375Z"
+                        fill="#121212" />
+                </svg>
+                Фильтр
+            </div>
+
+            <ul class="selected_filters">
+                <li>
+                    <p>
+                        Длина: от 4 до 12 м.
+                    </p>
+                    <svg class="delete_btn" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.8977 4.89775C14.1174 4.67808 14.1174 4.32192 13.8977 4.10225C13.6781 3.88258 13.3219 3.88258 13.1023 4.10225L9 8.2045L4.89775 4.10225C4.67808 3.88258 4.32192 3.88258 4.10225 4.10225C3.88258 4.32192 3.88258 4.67808 4.10225 4.89775L8.2045 9L4.10225 13.1023C3.88258 13.3219 3.88258 13.6781 4.10225 13.8977C4.32192 14.1174 4.67808 14.1174 4.89775 13.8977L9 9.79549L13.1023 13.8977C13.3219 14.1174 13.6781 14.1174 13.8977 13.8977C14.1174 13.6781 14.1174 13.3219 13.8977 13.1023L9.79549 9L13.8977 4.89775Z"
+                            fill="#ABABB3" />
+                    </svg>
+                </li>
+                <li>
+                    <p>
+                        Грузоподъемность: от 1000 до 9999 кг.
+                    </p>
+                    <svg class="delete_btn" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.8977 4.89775C14.1174 4.67808 14.1174 4.32192 13.8977 4.10225C13.6781 3.88258 13.3219 3.88258 13.1023 4.10225L9 8.2045L4.89775 4.10225C4.67808 3.88258 4.32192 3.88258 4.10225 4.10225C3.88258 4.32192 3.88258 4.67808 4.10225 4.89775L8.2045 9L4.10225 13.1023C3.88258 13.3219 3.88258 13.6781 4.10225 13.8977C4.32192 14.1174 4.67808 14.1174 4.89775 13.8977L9 9.79549L13.1023 13.8977C13.3219 14.1174 13.6781 14.1174 13.8977 13.8977C14.1174 13.6781 14.1174 13.3219 13.8977 13.1023L9.79549 9L13.8977 4.89775Z"
+                            fill="#ABABB3" />
+                    </svg>
+                </li>
+                <li>
+                    <p>
+                        Ширина: от 2 до 10 м.
+                    </p>
+                    <svg class="delete_btn" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.8977 4.89775C14.1174 4.67808 14.1174 4.32192 13.8977 4.10225C13.6781 3.88258 13.3219 3.88258 13.1023 4.10225L9 8.2045L4.89775 4.10225C4.67808 3.88258 4.32192 3.88258 4.10225 4.10225C3.88258 4.32192 3.88258 4.67808 4.10225 4.89775L8.2045 9L4.10225 13.1023C3.88258 13.3219 3.88258 13.6781 4.10225 13.8977C4.32192 14.1174 4.67808 14.1174 4.89775 13.8977L9 9.79549L13.1023 13.8977C13.3219 14.1174 13.6781 14.1174 13.8977 13.8977C14.1174 13.6781 14.1174 13.3219 13.8977 13.1023L9.79549 9L13.8977 4.89775Z"
+                            fill="#ABABB3" />
+                    </svg>
+                </li>
+                <li>
+                    <p>
+                        Вместимость: от 10 до 100 чел.
+                    </p>
+                    <svg class="delete_btn" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.8977 4.89775C14.1174 4.67808 14.1174 4.32192 13.8977 4.10225C13.6781 3.88258 13.3219 3.88258 13.1023 4.10225L9 8.2045L4.89775 4.10225C4.67808 3.88258 4.32192 3.88258 4.10225 4.10225C3.88258 4.32192 3.88258 4.67808 4.10225 4.89775L8.2045 9L4.10225 13.1023C3.88258 13.3219 3.88258 13.6781 4.10225 13.8977C4.32192 14.1174 4.67808 14.1174 4.89775 13.8977L9 9.79549L13.1023 13.8977C13.3219 14.1174 13.6781 14.1174 13.8977 13.8977C14.1174 13.6781 14.1174 13.3219 13.8977 13.1023L9.79549 9L13.8977 4.89775Z"
+                            fill="#ABABB3" />
+                    </svg>
+                </li>
+                <li>
+                    <p>
+                        Мощность двигателя: от 1000 до 9900 л.с.
+                    </p>
+                    <svg class="delete_btn" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.8977 4.89775C14.1174 4.67808 14.1174 4.32192 13.8977 4.10225C13.6781 3.88258 13.3219 3.88258 13.1023 4.10225L9 8.2045L4.89775 4.10225C4.67808 3.88258 4.32192 3.88258 4.10225 4.10225C3.88258 4.32192 3.88258 4.67808 4.10225 4.89775L8.2045 9L4.10225 13.1023C3.88258 13.3219 3.88258 13.6781 4.10225 13.8977C4.32192 14.1174 4.67808 14.1174 4.89775 13.8977L9 9.79549L13.1023 13.8977C13.3219 14.1174 13.6781 14.1174 13.8977 13.8977C14.1174 13.6781 14.1174 13.3219 13.8977 13.1023L9.79549 9L13.8977 4.89775Z"
+                            fill="#ABABB3" />
+                    </svg>
+                </li>
+                <li>
+                    <p>
+                        Цвет:
+                    </p>
+                    <svg class="delete_btn" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.8977 4.89775C14.1174 4.67808 14.1174 4.32192 13.8977 4.10225C13.6781 3.88258 13.3219 3.88258 13.1023 4.10225L9 8.2045L4.89775 4.10225C4.67808 3.88258 4.32192 3.88258 4.10225 4.10225C3.88258 4.32192 3.88258 4.67808 4.10225 4.89775L8.2045 9L4.10225 13.1023C3.88258 13.3219 3.88258 13.6781 4.10225 13.8977C4.32192 14.1174 4.67808 14.1174 4.89775 13.8977L9 9.79549L13.1023 13.8977C13.3219 14.1174 13.6781 14.1174 13.8977 13.8977C14.1174 13.6781 14.1174 13.3219 13.8977 13.1023L9.79549 9L13.8977 4.89775Z"
+                            fill="#ABABB3" />
+                    </svg>
+                </li>
+            </ul>
+
+            <div class="sort_btn">
+                Сортировка
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.22656 7.5L10.2266 12.5L15.2266 7.5" stroke="#121212" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div class="sort_list">
+                    <a class="sort">
+                        Сначала популярные
+                    </a>
+                    <a class="sort">
+                        Сначала с высоким рейтингом
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="model_filt_and_rez">
+            <div class="model_menu_and_filter">
+
+                <div class="close_cont">
+                    <svg class="mob_close_filt" class="" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#000" fill-opacity="1" />
+                        <path d="M28 12L12 28M12 12L28 28" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+
+                <ul class="menu">
+                    <li class="active">
+                        <a>
+                            Каютные катера
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Скоростные катера
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Катера для рыбалки
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Прогулочные катера
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Водометные катера
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            Катера водоизмещающие
+                        </a>
+                    </li>
+                </ul>
+                <div class="input_lines">
+                    <div class="slider-container">
+                        <p>Грузоподъемность, кг</p>
+                        <div class="line_inp" id="weight-slider"></div>
+                        <div class="slider-inputs">
+                            <input type="text" id="weight-min" data-min="100" />
+                            <input type="text" id="weight-max" data-max="500" />
+                        </div>
+                    </div>
+
+                    <div class="slider-container">
+                        <p>Длина, м</p>
+                        <div class="line_inp" id="length-slider"></div>
+                        <div class="slider-inputs">
+                            <input type="text" id="length-min" data-min="3" />
+                            <input type="text" id="length-max" data-max="16" />
+                        </div>
+                    </div>
+
+                    <div class="slider-container">
+                        <p>Ширина, м</p>
+                        <div class="line_inp" id="width-slider"></div>
+                        <div class="slider-inputs">
+                            <input type="text" id="width-min" data-min="2" />
+                            <input type="text" id="width-max" data-max="5" />
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p>Вместимость, чел</p>
+                        <div class="filter-group v1">
+                            <div class="custom-select active">
+                                <span class="selected">
+                                    1 - 3
+                                </span>
+                                <div class="options">
+                                    <button class="sel_list">1 - 3</button>
+                                    <button class="sel_list">4 - 7</button>
+                                    <button class="sel_list">8 и более</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p>МОЩНОСТЬ ДВИГАТЕЛЯ, Л.С.</p>
+                        <div class="filter-group v1">
+                            <div class="custom-select active">
+                                <span class="selected">
+                                    от 200 до 250
+                                </span>
+                                <div class="options">
+                                    <button class="sel_list">от 250 до 500</button>
+                                    <button class="sel_list">от 500 и более</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="color_cont">
+                    <p>
+                        Цвет
+                    </p>
+                    <div class="colors">
+                        <div style="background-color: #969696;">
+
+                        </div>
+                        <div style="background-color: #FFF;">
+
+                        </div>
+                        <div style="background-color: #3A198C;">
+
+                        </div>
+                        <div style="background-color: #B2526F;">
+
+                        </div>
+                        <div style="background-color: #43714E;">
+
+                        </div>
+                        <div style="background-color: #317BA0;">
+
+                        </div>
+                    </div>
+                </div>
+                <a id="filter_sub" class="button_v4">
+                    Применить
+                </a>
+            </div>
+
+            <div class="model_rez">
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./img/board.png" alt="boat">
+                    </div>
+                    <h3>
+                        Apparel Boats 750
+                    </h3>
+                    <div class="bot_cont">
+                        <ul>
+                            <li>
+                                <p>
+                                    12 м
+                                </p>
+                                <span>
+                                    Длина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 м
+                                </p>
+                                <span>
+                                    Ширина
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    5 чел
+                                </p>
+                                <span>
+                                    Экипаж
+                                </span>
+                            </li>
+                            <li>
+                                <p>
+                                    430 лс
+                                </p>
+                                <span>
+                                    Мощность
+                                </span>
+                            </li>
+                        </ul>
+                        <a href="" class="button_v5">
+                            Узнать цену
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</section>
+        <section class='padding flex just_text_section'>
+    <div class='def_div just_text default '>
+        <h2>
+            Купить алюминиевый катер от производителя
+        </h2>
+        <p>
+            Данное судно успешно используется в сегменте нефтегазового промысла, МЧС, рыболовных и охотхозяйствах,
+            туристических базах. Это уже не столько катер для путешествий, сколько плавсредство для доставки грузов и
+            техники в места, куда обычным способом не добраться.
+        </p>
+        <div class="mob_more_text">
+            <p>
+                Данное судно успешно используется в сегменте нефтегазового промысла, МЧС, рыболовных и охотхозяйствах,
+                туристических базах. Это уже не столько катер для путешествий, сколько плавсредство для доставки грузов
+                и
+                техники в места, куда обычным способом не добраться.
+                Катер аппарельного типа Apparel 750 «Мистраль 750», по задумкам производителя, это уменьшенная копия
+                судна
+                Apparel 1000 «Фактория 1000», в первую очередь предназначена для частного клиента и служит для перевозки
+                мелких грузов, квардроцикла или вездехода типа «арго», а также в сфере туризма для снабжения
+                туристических и
+                рыболовных баз. Данная модель, в рубке, имеет от 4 посадочных мест.
+            </p>
+        </div>
+        <button class="more_text_btn">
+            Показать еще
+        </button>
+    </div>
+</section>
+		<section class='padding flex element_form_section margin_bot'>
+    <div class='def_div element_form'>
+        <form>
+            <h2>
+                Не можете определиться
+                с моделью?
+            </h2>
+
+            <div class="cont">
+                <div class="input_cont">
+                    <input type="text" name="phone" placeholder="Ваш телефон">
+                    <span>
+                        Пожалуйста укажите телефон
+                    </span>
+                </div>
+                <button type="submit" class="button_v5">
+                    Отправить заявку
+                    
+                </button>
+            </div>
+
+            <div class="bot_text">
+                <div class="checkBox">
+                    <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.34351 6.49982L5.9361 9.09241L11.1213 3.90723" stroke="#121212" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <span>
+                    Я согласен с
+                    <a target="_blank">
+                        политикой конфиденциальности
+                    </a>
+                </span>
+               
+            </div>
+        </form>
+    </div>
+</section>
+	</main>
+	<footer class="padding flex">
+    <div class="def_div footer_cont">
+        <div class="left_cont">
+            <a class="logo_link" href="/">
+                <img src="./img/logo.svg" alt="">
+            </a>
+
+            <div class="svg_links">
+                <a class="svg_link vk" href="#">
+                    <svg width="40" height="40" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_179_6287)">
+                            <path
+                                d="M31.8728 26.0197C31.8437 25.957 31.8166 25.9051 31.7915 25.8635C31.3751 25.1135 30.5793 24.193 29.4047 23.1017L29.3799 23.0767L29.3675 23.0644L29.3549 23.0519H29.3423C28.8093 22.5437 28.4717 22.202 28.3303 22.0271C28.0716 21.6938 28.0137 21.3565 28.1551 21.0147C28.2549 20.7565 28.6301 20.2112 29.2797 19.378C29.6214 18.9364 29.892 18.5825 30.0918 18.3159C31.5331 16.3998 32.158 15.1753 31.9663 14.6421L31.8919 14.5175C31.8418 14.4425 31.7127 14.3739 31.5047 14.3113C31.2962 14.2488 31.0297 14.2385 30.7047 14.2801L27.106 14.305C27.0477 14.2843 26.9645 14.2863 26.856 14.3113C26.7477 14.3363 26.6935 14.3489 26.6935 14.3489L26.6309 14.3802L26.5812 14.4178C26.5395 14.4426 26.4937 14.4864 26.4436 14.5489C26.3939 14.6111 26.3523 14.6842 26.319 14.7675C25.9272 15.7755 25.4817 16.7127 24.9818 17.579C24.6735 18.0956 24.3904 18.5433 24.1319 18.9224C23.8737 19.3013 23.6571 19.5805 23.4823 19.7595C23.3073 19.9386 23.1493 20.0821 23.0074 20.1905C22.8657 20.299 22.7575 20.3448 22.6827 20.328C22.6076 20.3113 22.5369 20.2946 22.47 20.278C22.3534 20.203 22.2597 20.101 22.189 19.9719C22.118 19.8427 22.0702 19.6802 22.0452 19.4845C22.0204 19.2886 22.0057 19.1201 22.0015 18.9784C21.9976 18.8369 21.9994 18.6367 22.0078 18.3785C22.0165 18.1202 22.0204 17.9454 22.0204 17.8537C22.0204 17.5371 22.0265 17.1935 22.0389 16.8228C22.0515 16.4521 22.0617 16.1584 22.0703 15.942C22.0788 15.7254 22.0827 15.4962 22.0827 15.2546C22.0827 15.013 22.068 14.8235 22.0389 14.686C22.0102 14.5487 21.9661 14.4154 21.9081 14.2861C21.8496 14.157 21.7641 14.0571 21.6519 13.9862C21.5395 13.9154 21.3997 13.8592 21.2333 13.8175C20.7917 13.7176 20.2295 13.6635 19.5462 13.6551C17.9968 13.6385 17.0013 13.7385 16.5597 13.9551C16.3848 14.0466 16.2265 14.1717 16.085 14.3299C15.935 14.5132 15.914 14.6132 16.0223 14.6297C16.5222 14.7046 16.8761 14.8837 17.0844 15.1669L17.1595 15.317C17.2179 15.4253 17.2762 15.617 17.3345 15.8919C17.3928 16.1667 17.4304 16.4708 17.4469 16.8038C17.4885 17.4121 17.4885 17.9327 17.4469 18.3658C17.4052 18.7991 17.3658 19.1364 17.3282 19.378C17.2906 19.6196 17.2344 19.8154 17.1595 19.9653C17.0844 20.1152 17.0345 20.2069 17.0094 20.2402C16.9845 20.2734 16.9636 20.2944 16.9471 20.3026C16.8388 20.3441 16.7262 20.3652 16.6096 20.3652C16.4929 20.3652 16.3514 20.3069 16.1848 20.1902C16.0183 20.0735 15.8454 19.9132 15.6663 19.7091C15.4871 19.5049 15.2851 19.2196 15.0601 18.8531C14.8353 18.4866 14.602 18.0534 14.3604 17.5536L14.1605 17.1911C14.0356 16.9579 13.8649 16.6184 13.6483 16.1728C13.4315 15.727 13.24 15.2958 13.0734 14.8793C13.0069 14.7044 12.9069 14.5712 12.7736 14.4795L12.711 14.4419C12.6695 14.4087 12.6027 14.3734 12.5112 14.3357C12.4195 14.2981 12.3238 14.2712 12.2237 14.2546L8.79989 14.2794C8.45001 14.2794 8.21262 14.3587 8.08762 14.517L8.0376 14.5919C8.0126 14.6336 8 14.7002 8 14.7919C8 14.8836 8.02499 14.996 8.07502 15.1292C8.57484 16.3039 9.11838 17.4368 9.70564 18.5281C10.2929 19.6194 10.8032 20.4985 11.2363 21.1645C11.6695 21.831 12.111 22.4601 12.5609 23.0514C13.0108 23.6429 13.3085 24.022 13.4542 24.1885C13.6001 24.3553 13.7147 24.4801 13.798 24.5634L14.1104 24.8632C14.3104 25.0632 14.604 25.3027 14.9913 25.5817C15.3788 25.8609 15.8078 26.1357 16.2784 26.4067C16.7492 26.6772 17.2969 26.898 17.9217 27.0687C18.5465 27.2396 19.1546 27.3082 19.7461 27.2751H21.1832C21.4746 27.25 21.6954 27.1583 21.8455 27.0001L21.8952 26.9375C21.9286 26.8878 21.9599 26.8105 21.9888 26.7066C22.0181 26.6025 22.0326 26.4878 22.0326 26.363C22.0241 26.0048 22.0513 25.6821 22.1136 25.3947C22.1759 25.1074 22.2469 24.8908 22.3263 24.7449C22.4057 24.5992 22.4952 24.4762 22.5949 24.3765C22.6947 24.2766 22.7659 24.216 22.8077 24.1952C22.8491 24.1742 22.8823 24.16 22.9073 24.1515C23.1072 24.0849 23.3425 24.1494 23.6135 24.3453C23.8843 24.5411 24.1383 24.7828 24.3758 25.0701C24.6133 25.3577 24.8985 25.6803 25.2317 26.0384C25.5651 26.3967 25.8566 26.663 26.1064 26.8382L26.3562 26.9882C26.523 27.0882 26.7396 27.1799 27.0063 27.2631C27.2724 27.3464 27.5056 27.3672 27.7058 27.3256L30.9046 27.2757C31.221 27.2757 31.4672 27.2233 31.6419 27.1194C31.8168 27.0152 31.9208 26.9005 31.9543 26.7758C31.9877 26.6508 31.9895 26.5091 31.9607 26.3507C31.931 26.1926 31.9018 26.0821 31.8728 26.0197Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_179_6287">
+                                <rect width="24" height="24" fill="white" transform="translate(8 8.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </a>
+                <a class="svg_link youtube" href="#">
+                    <svg width="40" height="40" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M33.4683 13.4705C33.1442 12.2656 32.1943 11.3158 30.9895 10.9913C28.7887 10.3892 19.985 10.3892 19.985 10.3892C19.985 10.3892 11.1817 10.3892 8.98083 10.9685C7.79928 11.2926 6.82613 12.2658 6.50204 13.4705C5.92285 15.6712 5.92285 20.2351 5.92285 20.2351C5.92285 20.2351 5.92285 24.8221 6.50204 26.9998C6.82648 28.2045 7.77611 29.1543 8.981 29.4788C11.2049 30.0811 19.9854 30.0811 19.9854 30.0811C19.9854 30.0811 28.7887 30.0811 30.9895 29.5018C32.1944 29.1775 33.1442 28.2277 33.4687 27.023C34.0477 24.8221 34.0477 20.2583 34.0477 20.2583C34.0477 20.2583 34.0709 15.6712 33.4683 13.4705ZM17.1821 24.4515V16.0188L24.5028 20.2351L17.1821 24.4515Z"
+                            fill="white" />
+                    </svg>
+                </a>
+            </div>
+            <span class="rights">
+                © 2025 Apparel Boats. Все права защищены.
+            </span>
+        </div>
+        <div class="help_cont">
+            <div class="middle_cont">
+                <ul class="menu">
+                    <li class="active">
+                        <a href="#">
+                            Модели
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Конфигуратор
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            О нас
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Галерея
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="right_cont">
+
+                <h3 class="subtitle">
+                    Связь с нами
+                </h3>
+
+                <a class="footer_phone" href="tel:+7 (346) 227 - 13-96">
+                    +7 (346) 227 - 13-96
+                </a>
+
+                <div class="svg_links">
+                    <a class="svg_link watsapp" href="#">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M32.0586 17.9453C30.3944 16.2623 28.1834 15.2297 25.8246 15.034C23.4658 14.8383 21.1148 15.4923 19.1959 16.8781C17.2771 18.2638 15.917 20.2899 15.361 22.5906C14.8051 24.8913 15.0901 27.3149 16.1644 29.4239L15.1118 34.5343C15.1006 34.5853 15.1001 34.6382 15.1105 34.6894C15.121 34.7406 15.142 34.7891 15.1724 34.8316C15.2158 34.8961 15.2779 34.9458 15.3503 34.974C15.4227 35.0022 15.502 35.0076 15.5776 34.9895L20.5774 33.8027C22.6807 34.8489 25.0869 35.1149 27.3678 34.5532C29.6487 33.9916 31.6564 32.6388 33.0334 30.7356C34.4104 28.8325 35.0674 26.5025 34.8874 24.1603C34.7075 21.8181 33.7023 19.6158 32.0507 17.9453H32.0586ZM30.4955 30.4107C29.3446 31.5596 27.8625 32.3189 26.2576 32.5818C24.6528 32.8448 23.0058 32.5981 21.5485 31.8765L20.8485 31.5291L17.7775 32.2554V32.2159L18.4249 29.1187L18.0828 28.445C17.3376 26.9836 17.0745 25.3238 17.3312 23.7036C17.5879 22.0835 18.3512 20.5863 19.5117 19.4269C20.9688 17.9713 22.9441 17.1537 25.0036 17.1537C27.0632 17.1537 29.0385 17.9713 30.4955 19.4269L30.5297 19.4742C31.9679 20.9344 32.7707 22.9038 32.7633 24.9532C32.7559 27.0027 31.9389 28.9662 30.4903 30.416L30.4955 30.4107Z"
+                                fill="white" />
+                            <path
+                                d="M30.2298 28.1585C29.8535 28.7506 29.2562 29.4742 28.5114 29.6558C27.1957 29.9716 25.1931 29.6558 22.6853 27.3374L22.6537 27.3085C20.4722 25.2717 19.8933 23.5744 20.0222 22.2297C20.0986 21.4639 20.7354 20.7745 21.2722 20.3219C21.3576 20.2499 21.4586 20.1989 21.5671 20.1729C21.6757 20.147 21.7889 20.1468 21.8975 20.1723C22.0062 20.1979 22.1074 20.2486 22.193 20.3202C22.2786 20.3919 22.3463 20.4826 22.3906 20.585L23.1985 22.4113C23.2512 22.5288 23.271 22.6585 23.2557 22.7865C23.2404 22.9144 23.1906 23.0358 23.1116 23.1376L22.7011 23.6639C22.6158 23.7731 22.5649 23.9053 22.5551 24.0436C22.5453 24.1819 22.5769 24.3199 22.6458 24.4402C23.0358 25.0149 23.5024 25.5337 24.0326 25.9822C24.6032 26.5313 25.2502 26.9949 25.9536 27.3585C26.082 27.4102 26.2229 27.4226 26.3583 27.394C26.4937 27.3654 26.6176 27.2972 26.7141 27.198L27.1852 26.719C27.2748 26.6227 27.3893 26.553 27.5161 26.5177C27.6429 26.4824 27.777 26.4828 27.9036 26.519L29.8246 27.069C29.9334 27.1 30.0334 27.1562 30.1166 27.233C30.1997 27.3098 30.2635 27.4051 30.303 27.5111C30.3425 27.6172 30.3564 27.7311 30.3437 27.8435C30.331 27.956 30.2919 28.0639 30.2298 28.1585Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a class="svg_link telegram" href="#">
+                        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_179_6783)">
+                                <path
+                                    d="M22.5785 27.9821L22.2063 33.2171C22.7388 33.2171 22.9694 32.9883 23.246 32.7136L25.7425 30.3277L30.9157 34.1161C31.8644 34.6449 32.5329 34.3665 32.7888 33.2433L36.1844 17.3321L36.1854 17.3311C36.4863 15.9286 35.6782 15.3802 34.7538 15.7243L14.7944 23.3658C13.4322 23.8946 13.4529 24.654 14.5629 24.998L19.6657 26.5852L31.5185 19.1686C32.0763 18.7993 32.5835 19.0036 32.1663 19.373L22.5785 27.9821Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_179_6783">
+                                    <rect width="22.5" height="22.5" fill="white" transform="translate(13.75 13.75)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="svg_link vk" href="#">
+                        <svg width="50" height="50" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_179_6287)">
+                                <path
+                                    d="M31.8728 26.0197C31.8437 25.957 31.8166 25.9051 31.7915 25.8635C31.3751 25.1135 30.5793 24.193 29.4047 23.1017L29.3799 23.0767L29.3675 23.0644L29.3549 23.0519H29.3423C28.8093 22.5437 28.4717 22.202 28.3303 22.0271C28.0716 21.6938 28.0137 21.3565 28.1551 21.0147C28.2549 20.7565 28.6301 20.2112 29.2797 19.378C29.6214 18.9364 29.892 18.5825 30.0918 18.3159C31.5331 16.3998 32.158 15.1753 31.9663 14.6421L31.8919 14.5175C31.8418 14.4425 31.7127 14.3739 31.5047 14.3113C31.2962 14.2488 31.0297 14.2385 30.7047 14.2801L27.106 14.305C27.0477 14.2843 26.9645 14.2863 26.856 14.3113C26.7477 14.3363 26.6935 14.3489 26.6935 14.3489L26.6309 14.3802L26.5812 14.4178C26.5395 14.4426 26.4937 14.4864 26.4436 14.5489C26.3939 14.6111 26.3523 14.6842 26.319 14.7675C25.9272 15.7755 25.4817 16.7127 24.9818 17.579C24.6735 18.0956 24.3904 18.5433 24.1319 18.9224C23.8737 19.3013 23.6571 19.5805 23.4823 19.7595C23.3073 19.9386 23.1493 20.0821 23.0074 20.1905C22.8657 20.299 22.7575 20.3448 22.6827 20.328C22.6076 20.3113 22.5369 20.2946 22.47 20.278C22.3534 20.203 22.2597 20.101 22.189 19.9719C22.118 19.8427 22.0702 19.6802 22.0452 19.4845C22.0204 19.2886 22.0057 19.1201 22.0015 18.9784C21.9976 18.8369 21.9994 18.6367 22.0078 18.3785C22.0165 18.1202 22.0204 17.9454 22.0204 17.8537C22.0204 17.5371 22.0265 17.1935 22.0389 16.8228C22.0515 16.4521 22.0617 16.1584 22.0703 15.942C22.0788 15.7254 22.0827 15.4962 22.0827 15.2546C22.0827 15.013 22.068 14.8235 22.0389 14.686C22.0102 14.5487 21.9661 14.4154 21.9081 14.2861C21.8496 14.157 21.7641 14.0571 21.6519 13.9862C21.5395 13.9154 21.3997 13.8592 21.2333 13.8175C20.7917 13.7176 20.2295 13.6635 19.5462 13.6551C17.9968 13.6385 17.0013 13.7385 16.5597 13.9551C16.3848 14.0466 16.2265 14.1717 16.085 14.3299C15.935 14.5132 15.914 14.6132 16.0223 14.6297C16.5222 14.7046 16.8761 14.8837 17.0844 15.1669L17.1595 15.317C17.2179 15.4253 17.2762 15.617 17.3345 15.8919C17.3928 16.1667 17.4304 16.4708 17.4469 16.8038C17.4885 17.4121 17.4885 17.9327 17.4469 18.3658C17.4052 18.7991 17.3658 19.1364 17.3282 19.378C17.2906 19.6196 17.2344 19.8154 17.1595 19.9653C17.0844 20.1152 17.0345 20.2069 17.0094 20.2402C16.9845 20.2734 16.9636 20.2944 16.9471 20.3026C16.8388 20.3441 16.7262 20.3652 16.6096 20.3652C16.4929 20.3652 16.3514 20.3069 16.1848 20.1902C16.0183 20.0735 15.8454 19.9132 15.6663 19.7091C15.4871 19.5049 15.2851 19.2196 15.0601 18.8531C14.8353 18.4866 14.602 18.0534 14.3604 17.5536L14.1605 17.1911C14.0356 16.9579 13.8649 16.6184 13.6483 16.1728C13.4315 15.727 13.24 15.2958 13.0734 14.8793C13.0069 14.7044 12.9069 14.5712 12.7736 14.4795L12.711 14.4419C12.6695 14.4087 12.6027 14.3734 12.5112 14.3357C12.4195 14.2981 12.3238 14.2712 12.2237 14.2546L8.79989 14.2794C8.45001 14.2794 8.21262 14.3587 8.08762 14.517L8.0376 14.5919C8.0126 14.6336 8 14.7002 8 14.7919C8 14.8836 8.02499 14.996 8.07502 15.1292C8.57484 16.3039 9.11838 17.4368 9.70564 18.5281C10.2929 19.6194 10.8032 20.4985 11.2363 21.1645C11.6695 21.831 12.111 22.4601 12.5609 23.0514C13.0108 23.6429 13.3085 24.022 13.4542 24.1885C13.6001 24.3553 13.7147 24.4801 13.798 24.5634L14.1104 24.8632C14.3104 25.0632 14.604 25.3027 14.9913 25.5817C15.3788 25.8609 15.8078 26.1357 16.2784 26.4067C16.7492 26.6772 17.2969 26.898 17.9217 27.0687C18.5465 27.2396 19.1546 27.3082 19.7461 27.2751H21.1832C21.4746 27.25 21.6954 27.1583 21.8455 27.0001L21.8952 26.9375C21.9286 26.8878 21.9599 26.8105 21.9888 26.7066C22.0181 26.6025 22.0326 26.4878 22.0326 26.363C22.0241 26.0048 22.0513 25.6821 22.1136 25.3947C22.1759 25.1074 22.2469 24.8908 22.3263 24.7449C22.4057 24.5992 22.4952 24.4762 22.5949 24.3765C22.6947 24.2766 22.7659 24.216 22.8077 24.1952C22.8491 24.1742 22.8823 24.16 22.9073 24.1515C23.1072 24.0849 23.3425 24.1494 23.6135 24.3453C23.8843 24.5411 24.1383 24.7828 24.3758 25.0701C24.6133 25.3577 24.8985 25.6803 25.2317 26.0384C25.5651 26.3967 25.8566 26.663 26.1064 26.8382L26.3562 26.9882C26.523 27.0882 26.7396 27.1799 27.0063 27.2631C27.2724 27.3464 27.5056 27.3672 27.7058 27.3256L30.9046 27.2757C31.221 27.2757 31.4672 27.2233 31.6419 27.1194C31.8168 27.0152 31.9208 26.9005 31.9543 26.7758C31.9877 26.6508 31.9895 26.5091 31.9607 26.3507C31.931 26.1926 31.9018 26.0821 31.8728 26.0197Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_179_6287">
+                                    <rect width="24" height="24" fill="white" transform="translate(8 8.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a class="svg_link youtube" href="#">
+                        <svg width="50" height="50" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M33.4683 13.4705C33.1442 12.2656 32.1943 11.3158 30.9895 10.9913C28.7887 10.3892 19.985 10.3892 19.985 10.3892C19.985 10.3892 11.1817 10.3892 8.98083 10.9685C7.79928 11.2926 6.82613 12.2658 6.50204 13.4705C5.92285 15.6712 5.92285 20.2351 5.92285 20.2351C5.92285 20.2351 5.92285 24.8221 6.50204 26.9998C6.82648 28.2045 7.77611 29.1543 8.981 29.4788C11.2049 30.0811 19.9854 30.0811 19.9854 30.0811C19.9854 30.0811 28.7887 30.0811 30.9895 29.5018C32.1944 29.1775 33.1442 28.2277 33.4687 27.023C34.0477 24.8221 34.0477 20.2583 34.0477 20.2583C34.0477 20.2583 34.0709 15.6712 33.4683 13.4705ZM17.1821 24.4515V16.0188L24.5028 20.2351L17.1821 24.4515Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+
+                <a class="email" href="mailto:apparelboats@mail.ru">
+                    apparelboats@mail.ru
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+</footer>
+
+	<script src="./js/addSwiper.js"></script>
+	<script src="./js/copyElements.js"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>

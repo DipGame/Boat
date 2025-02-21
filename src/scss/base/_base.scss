@@ -175,7 +175,7 @@ main {
 
 @media (max-width: 1280px) {
 	main {
-		padding-top: 70px;
+		margin-top: 70px;
 	}
 }
 
@@ -498,6 +498,36 @@ button:disabled:hover {
 				position: relative;
 				top: 2px;
 			}
+		}
+	}
+}
+
+.bread.v2 {
+	display: flex;
+	width: 100%;
+	// max-width: 1322px;
+	// padding: 0 16px;
+	padding: 50px 0 20px;
+
+	ul.def_div {
+		max-width: 1322px;
+		padding: 0 16px;
+	}
+}
+.bread.absolute {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+@media (max-width: 500px) {
+	.bread.v2 {
+		padding: 30px 0 20px;
+	
+		ul.def_div {
+			max-width: 1322px;
+			padding: 0 16px;
 		}
 	}
 }
